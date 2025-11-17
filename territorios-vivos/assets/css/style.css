@@ -860,7 +860,7 @@ html, body {
 
 /* Ajuste específico: afastar o primeiro item para evitar sobreposição visual */
 .timeline-item:first-child {
-    margin-top: 24px;
+    margin-top: 40px;
 }
 
 .timeline-item:nth-child(odd) {
