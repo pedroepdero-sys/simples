@@ -858,6 +858,11 @@ html, body {
     position: relative;
 }
 
+/* Ajuste específico: afastar o primeiro item para evitar sobreposição visual */
+.timeline-item:first-child {
+    margin-top: 24px;
+}
+
 .timeline-item:nth-child(odd) {
     margin-left: 0;
     margin-right: 50%;
