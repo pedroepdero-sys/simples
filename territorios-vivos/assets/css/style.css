@@ -839,8 +839,8 @@ html, body {
 .timeline {
     position: relative;
     /* Aumenta o espaçamento superior para evitar sobreposição com títulos/abas */
-    padding: 40px 0 20px 0;
-    margin-top: 8px;
+    padding: 80px 0 20px 0;
+    margin-top: 12px;
 }
 
 .timeline::before {
