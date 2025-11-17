@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Territórios Vivos - Mapa Indígena Interativo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-section">
+                    <h1>🌍 Territórios Vivos</h1>
+                    <p class="tagline">Mapa Indígena Interativo - Explore a Diversidade dos Povos do Brasil</p>
+                </div>
+                <nav class="navigation">
+                    <button id="btn-mapa" class="nav-btn active" data-section="mapa">🗺️ Mapa</button>
+                    <button id="btn-quiz" class="nav-btn" data-section="quiz">❓ Quiz</button>
+                    <button id="btn-educacao" class="nav-btn" data-section="educacao">📚 Aprender</button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Seção Mapa -->
+        <section id="mapa-section" class="section active">
+            <div class="mapa-container">
+                <!-- Filtros -->
+                <div class="filtros-panel">
+                    <h3>🧭 Filtros</h3>
+                    <div class="filtro-group">
+                        <label for="filtro-regiao">Região:</label>
+                        <select id="filtro-regiao">
+                            <option value="">Todas</option>
+                            <option value="Norte">Norte</option>
+                            <option value="Nordeste">Nordeste</option>
+                            <option value="Centro-Oeste">Centro-Oeste</option>
+                            <option value="Sudeste">Sudeste</option>
+                            <option value="Sul">Sul</option>
+                        </select>
+                    </div>
+                    <div class="filtro-group">
+                        <label for="filtro-bioma">Bioma:</label>
+                        <select id="filtro-bioma">
+                            <option value="">Todos</option>
+                            <option value="Floresta Amazônica">Floresta Amazônica</option>
+                            <option value="Mata Atlântica">Mata Atlântica</option>
+                            <option value="Cerrado">Cerrado</option>
+                            <option value="Pantanal">Pantanal</option>
+                            <option value="Caatinga">Caatinga</option>
+                            <option value="Mata de Araucária">Mata de Araucária</option>
+                        </select>
+                    </div>
+                    <div class="filtro-group">
+                        <label for="filtro-lingua">Família Linguística:</label>
+                        <select id="filtro-lingua">
+                            <option value="">Todas</option>
+                            <option value="Tupi-Guarani">Tupi-Guarani</option>
+                            <option value="Jê">Jê</option>
+                            <option value="Yanomami">Yanomami</option>
+                            <option value="Aruak">Aruak</option>
+                            <option value="Karib">Karib</option>
+                            <option value="Macro-Jê">Macro-Jê</option>
+                        </select>
+                    </div>
+                    <button id="btn-limpar-filtros" class="btn-secondary">Limpar Filtros</button>
+                </div>
+
+                <!-- Mapa -->
+                <div id="map" class="map-container"></div>
+
+                <!-- Lista de Povos -->
+                <div class="povos-lista">
+                    <h3>🏘️ Povos Indígenas</h3>
+                    <div id="povos-container" class="povos-grid"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Quiz -->
+        <section id="quiz-section" class="section">
+            <div class="quiz-container">
+                <!-- Seleção de Nível -->
+                <div id="quiz-selector" class="quiz-selector">
+                    <h2>❓ Quiz Interativo</h2>
+                    <p>Teste seu conhecimento sobre os povos indígenas do Brasil!</p>
+                    <div class="dificuldade-buttons">
+                        <button class="btn-dificuldade" data-dificuldade="facil">⭐ Fácil</button>
+                        <button class="btn-dificuldade" data-dificuldade="medio">⭐⭐ Médio</button>
+                        <button class="btn-dificuldade" data-dificuldade="dificil">⭐⭐⭐ Difícil</button>
+                    </div>
+                </div>
+
+                <!-- Quiz em Andamento -->
+                <div id="quiz-game" class="quiz-game hidden">
+                    <div class="quiz-progress">
+                        <div class="progress-bar">
+                            <div id="progress-fill" class="progress-fill"></div>
+                        </div>
+                        <span id="questao-contador">Pergunta 1 de 10</span>
+                        <span id="timer" class="timer"></span>
+                    </div>
+
+                    <div class="quiz-content">
+                        <h3 id="quiz-pergunta">Pergunta...</h3>
+                        <div id="quiz-opcoes" class="quiz-opcoes"></div>
+                    </div>
+
+                    <div class="quiz-actions">
+                        <button id="btn-proxima" class="btn-primary hidden">Próxima →</button>
+                        <button id="btn-finalizar" class="btn-primary hidden">Finalizar Quiz</button>
+                    </div>
+                </div>
+
+                <!-- Resultados -->
+                <div id="quiz-resultados" class="quiz-resultados hidden">
+                    <div class="resultado-card">
+                        <h2>🎉 Parabéns!</h2>
+                        <div class="resultado-score">
+                            <div class="medal" id="medal-icon">🏅</div>
+                            <div class="score-details">
+                                <p class="percentual" id="resultado-percentual">0%</p>
+                                <p class="acertos" id="resultado-acertos">0 de 10 corretos</p>
+                            </div>
+                        </div>
+                        <div id="resultado-feedback" class="resultado-feedback"></div>
+                        <div id="resultado-sugestoes" class="resultado-sugestoes"></div>
+                        <button id="btn-novo-quiz" class="btn-primary">Fazer Outro Quiz</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Educativa -->
+        <section id="educacao-section" class="section">
+            <div class="educacao-container">
+                <h2>📚 Centro de Aprendizagem</h2>
+                
+                <div class="educacao-tabs">
+                    <button class="tab-btn active" data-tab="artigos">📖 Artigos</button>
+                    <button class="tab-btn" data-tab="timeline">⏳ Linha do Tempo</button>
+                    <button class="tab-btn" data-tab="glossario">📝 Glossário</button>
+                </div>
+
+                <!-- Artigos -->
+                <div id="artigos-tab" class="tab-content active">
+                    <div class="artigos-grid">
+                        <article class="artigo-card">
+                            <h3>🌳 Conhecimento Ecológico dos Povos Indígenas</h3>
+                            <p>Os povos indígenas possuem conhecimento profundo sobre os ecossistemas brasileiros, acumulado ao longo de milhares de anos. Esse saber tradicional é fundamental para a conservação ambiental.</p>
+                            <p>Os indígenas usam mais de 3.000 espécies de plantas medicinais, muitas delas ainda não catalogadas pela ciência ocidental.</p>
+                        </article>
+
+                        <article class="artigo-card">
+                            <h3>🎨 Arte e Cultura Indígena</h3>
+                            <p>A arte indígena é uma expressão viva de sua identidade. Cada povo desenvolve técnicas únicas de pintura corporal, cerâmica, tecelagem e escultura.</p>
+                            <p>As cores e padrões frequentemente representam animais sagrados, eventos históricos e crenças espirituais.</p>
+                        </article>
+
+                        <article class="artigo-card">
+                            <h3>👥 Organização Social e Política</h3>
+                            <p>Muitos povos indígenas desenvolveram sistemas de governo democráticos e igualitários, com decisões tomadas em assembleias comunitárias.</p>
+                            <p>A liderança é frequentemente baseada em sabedoria e capacidade de ouvir, não em poder coercitivo.</p>
+                        </article>
+
+                        <article class="artigo-card">
+                            <h3>🔮 Espiritualidade e Rituais</h3>
+                            <p>A espiritualidade permeia todos os aspectos da vida indígena. Rituais marcam plantios, colheitas, nascimentos, casamentos e transições importantes.</p>
+                            <p>O xamanismo é praticado por vários povos como forma de cura e conexão com espíritos da natureza.</p>
+                        </article>
+
+                        <article class="artigo-card">
+                            <h3>🗣️ Diversidade Linguística</h3>
+                            <p>O Brasil abriga mais de 180 línguas indígenas, cada uma com sua própria gramática, som e forma de ver o mundo.</p>
+                            <p>Muitas dessas línguas estão desaparecendo. Preservá-las é preservar a sabedoria de gerações.</p>
+                        </article>
+
+                        <article class="artigo-card">
+                            <h3>📚 Tradição Oral e Transmissão de Conhecimento</h3>
+                            <p>Sem linguagem escrita (antes do contato), os povos indígenas desenvolveram sofisticados sistemas de transmissão de conhecimento através da tradição oral.</p>
+                            <p>Histórias, músicas e danças carregam informações sobre medicina, astronomia, história e ética.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Linha do Tempo -->
+                <div id="timeline-tab" class="tab-content">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-date">-12000 a -10000 anos</div>
+                            <div class="timeline-content">
+                                <h4>Primeiros Povos do Brasil</h4>
+                                <p>Primeiros humanos chegam na América do Sul e gradualmente se distribuem pelo Brasil.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">-5000 a -1000 anos</div>
+                            <div class="timeline-content">
+                                <h4>Desenvolvimento das Culturas Indígenas</h4>
+                                <p>Diferentes povos desenvolvem suas próprias culturas, artes, tecnologias e organização social.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">1500</div>
+                            <div class="timeline-content">
+                                <h4>Chegada dos Portugueses</h4>
+                                <p>O contato com europeus marca o início de transformações profundas para os povos indígenas.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">1500-1800</div>
+                            <div class="timeline-content">
+                                <h4>Período Colonial</h4>
+                                <p>Colonização, escravidão, doenças e perseguição causam declínio populacional dramático.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">1800-1988</div>
+                            <div class="timeline-content">
+                                <h4>Períodos Imperiais e Republicanos</h4>
+                                <p>Políticas de assimilação e integração forçada continuam, mas há também resistência indígena.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">1988</div>
+                            <div class="timeline-content">
+                                <h4>Constituição Federal</h4>
+                                <p>Nova Constituição reconhece direitos indígenas e suas terras, marco importante para a autonomia.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-date">1988-Hoje</div>
+                            <div class="timeline-content">
+                                <h4>Movimento Indígena Contemporâneo</h4>
+                                <p>Povos indígenas se organizam para defender territórios, direitos e preservar suas culturas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Glossário -->
+                <div id="glossario-tab" class="tab-content">
+                    <div class="glossario">
+                        <div class="glossario-item">
+                            <h4>Aldeia</h4>
+                            <p>Comunidade indígena, agrupamento de casas onde vivem os membros de um povo.</p>
+                        </div>
+
+                        <div class="glossario-item">
+                            <h4>Xamã</h4>
+                            <p>Especialista espiritual que atua como curador, mágico e intermediário entre o mundo dos espíritos e dos humanos.</p>
+                        </div>
+
+                        <div class="glossario-item">
+                            <h4>Totem</h4>
+                            <p>Animal ou ser da natureza que representa a identidade ou espírito protetor de um grupo ou indivíduo.</p>
+                        </div>
+
+                        <div class="glossario-item">
+                            <h4>Território Tradicional</h4>
+                            <p>Terra que um povo indígena ocupa há séculos ou milênios, onde pratica suas atividades culturais e de subsistência.</p>
+                        </div>
+
+                        <div class="glossario-item">
+                            <h4>Demarcação</h4>
+                            <p>Processo legal de definição oficial e reconhecimento das fronteiras de um território indígena pelo Estado.</p>
+                        </div>
+
+                        <div class="glossario-item">
+                            <h4>Cosmologia</h4>
+                            <p>Sistema de crenças de um povo sobre a origem, estrutura e funcionamento do universo.</p>
+                        </div>
+
+                        <div class="glossario-item">
+                            <h4>Ritual</h4>
+                            <p>Conjunto de ações realizadas conforme regras estabelecidas, frequentemente com significado espiritual ou social.</p>
+                        </div>
+
+                        <div class="glossario-item">
+                            <h4>Pintura Corporal</h4>
+                            <p>Decoração do corpo com tintas de origem natural, praticada por muitos povos com significados sociais e espirituais.</p>
+                        </div>
+
+                        <div class="glossario-item">
+                            <h4>Canoagem</h4>
+                            <p>Arte e técnica de construção e navegação de canoas, fundamental para povos ribeirinhos.</p>
+                        </div>
+
+                        <div class="glossario-item">
+                            <h4>Arco e Flecha</h4>
+                            <p>Instrumentos tradicionais de caça e guerra, ainda mantidos por muitos povos como herança cultural.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal de Detalhes do Povo -->
+    <div id="povo-modal" class="modal hidden">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div id="modal-povo-info" class="modal-povo-info"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>💚 Territórios Vivos - Plataforma Educativa sobre Povos Indígenas do Brasil</p>
+            <p>Criado para valorizar, aprender e respeitar a diversidade indígena brasileira.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

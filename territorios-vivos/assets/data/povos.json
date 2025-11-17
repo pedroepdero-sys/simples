@@ -1,0 +1,272 @@
+{
+  "povos": [
+    {
+      "id": 1,
+      "nome": "Guarani",
+      "regiao": "Sul e Sudeste",
+      "bioma": "Mata Atlântica",
+      "familiaLinguistica": "Tupi-Guarani",
+      "populacao": 85000,
+      "latitud": -25.5,
+      "longitud": -47.5,
+      "localizacao": "São Paulo, Paraná, Santa Catarina e Rio de Janeiro",
+      "historia": "Os Guarani são um dos maiores povos indígenas do Brasil. Habitantes da região de Mata Atlântica há milhares de anos, desenvolveram uma cultura rica em espiritualidade e conexão com a natureza.",
+      "linguas": ["Guarani", "Português"],
+      "curiosidades": [
+        "A palavra 'jaguar' vem da língua Guarani",
+        "Praticam a 'Busca da Terra Sem Males', uma longa jornada mística",
+        "Conhecidos por sua arte de tecelagem e cerâmica"
+      ],
+      "rituais": "Dança do Opará, cerimônias de iniciação, rituais de cura",
+      "artesanato": "Cerâmica pintada, colares de sementes, cestos tejidos",
+      "alimentacao": "Mandioca, milho, feijão, caça e pesca",
+      "saudacao": "Nde porã (Tudo bem com você?)"
+    },
+    {
+      "id": 2,
+      "nome": "Yanomami",
+      "regiao": "Norte",
+      "bioma": "Floresta Amazônica",
+      "familiaLinguistica": "Yanomami",
+      "populacao": 27000,
+      "latitud": 2.5,
+      "longitud": -63.0,
+      "localizacao": "Roraima e Amazonas",
+      "historia": "Os Yanomami habitam a região do Alto Orinoco e suas terras abrangem uma vasta área de floresta tropical. Possuem um profundo conhecimento ecológico único.",
+      "linguas": ["Yanomami", "Português"],
+      "curiosidades": [
+        "Organizam-se em pequenas comunidades (shabonos)",
+        "Conhecimento incomparável sobre plantas medicinais",
+        "Rituais xamânicos sofisticados"
+      ],
+      "rituais": "Rituais fúnebres, cerimônias de cura, práticas xamânicas",
+      "artesanato": "Arcos e flechas, adornos de penas, painéis de madeira",
+      "alimentacao": "Caça, pesca, mandioca, frutas silvestres, mel",
+      "saudacao": "Yamou thë (Oi, tudo bem?)"
+    },
+    {
+      "id": 3,
+      "nome": "Tupinambá",
+      "regiao": "Nordeste e Sudeste",
+      "bioma": "Mata Atlântica",
+      "familiaLinguistica": "Tupi-Guarani",
+      "populacao": 2000,
+      "latitud": -13.0,
+      "longitud": -38.5,
+      "localizacao": "Bahia, Pernambuco e litoral",
+      "historia": "Povo guerreiro que habitou o litoral brasileiro. Eram navegadores e guerreiros conhecidos por suas embarcações e técnicas de guerra.",
+      "linguas": ["Português", "Língua histórica Tupinambá"],
+      "curiosidades": [
+        "Criaram o termo 'Jaguara' para designar guerreiros",
+        "Excelentes navegadores de canoas",
+        "Influenciaram muito a cultura portuguesa"
+      ],
+      "rituais": "Cerimônias guerreiras, rituais de iniciação, festividades",
+      "artesanato": "Arcos, flechas, vasos cerâmicos, adornos",
+      "alimentacao": "Mandioca, milho, frutas, caça e pesca",
+      "saudacao": "Nde porã (como está?)"
+    },
+    {
+      "id": 4,
+      "nome": "Kaingang",
+      "regiao": "Sul",
+      "bioma": "Mata de Araucária",
+      "familiaLinguistica": "Jê",
+      "populacao": 45000,
+      "latitud": -27.0,
+      "longitud": -50.5,
+      "localizacao": "Rio Grande do Sul, Paraná, Santa Catarina e São Paulo",
+      "historia": "Os Kaingang são habitantes ancestrais do planalto meridional. Desenvolveram adaptações únicas à vida em clima temperado.",
+      "linguas": ["Kaingang", "Português"],
+      "curiosidades": [
+        "Excelentes fabricantes de ferramentas de pedra",
+        "Conhecimento profundo sobre plantas do planalto",
+        "Organização social em metades (patrilineal)"
+      ],
+      "rituais": "Festa do milho, cerimônias de iniciação, rituais de cura",
+      "artesanato": "Cerâmica, tecelagem com fibras naturais, peças de madeira",
+      "alimentacao": "Milho, abóbora, feijão, caça (especialmente porco-espinho)",
+      "saudacao": "Nõ jã (Tudo bem?)"
+    },
+    {
+      "id": 5,
+      "nome": "Kayapo",
+      "regiao": "Centro-Oeste e Norte",
+      "bioma": "Floresta Amazônica",
+      "familiaLinguistica": "Jê",
+      "populacao": 14000,
+      "latitud": -5.5,
+      "longitud": -52.0,
+      "localizacao": "Pará e Mato Grosso",
+      "historia": "Os Kayapó são guerreiros tradicionais da Amazônia, conhecidos por sua resistência e organização política avançada.",
+      "linguas": ["Kayapó", "Português"],
+      "curiosidades": [
+        "Líderes ambientalistas modernos",
+        "Usam tecnologia para proteger suas terras",
+        "Conhecimento sofisticado de plantas da floresta"
+      ],
+      "rituais": "Kuarup (homenagem aos mortos), dança do fogo, cerimônias de iniciação",
+      "artesanato": "Adornos de penas, colares de dentes e sementes, esculturas",
+      "alimentacao": "Caça, pesca, mandioca, açaí, castanha-do-pará",
+      "saudacao": "Tep me! (Oi!)"
+    },
+    {
+      "id": 6,
+      "nome": "Terena",
+      "regiao": "Centro-Oeste",
+      "bioma": "Cerrado e Pantanal",
+      "familiaLinguistica": "Aruak",
+      "populacao": 29000,
+      "latitud": -20.5,
+      "longitud": -55.5,
+      "localizacao": "Mato Grosso do Sul",
+      "historia": "Os Terena são conhecidos por sua adaptabilidade e resiliência. Historicamente navegadores de rios, desenvolveram técnicas sofisticadas de pesca.",
+      "linguas": ["Terena", "Português"],
+      "curiosidades": [
+        "Históricos navegadores do rio Paraguai",
+        "Conhecimento avançado sobre manejo de água",
+        "Tradição forte de artesanato em couro"
+      ],
+      "rituais": "Danças tradicionais, cerimônias de casamento, festividades sazonais",
+      "artesanato": "Bolsas de couro, cerâmica, tecelagem, artigos de pesca",
+      "alimentacao": "Peixe, mandioca, milho, caça do cerrado",
+      "saudacao": "Vati koẽ (Como vai?)"
+    },
+    {
+      "id": 7,
+      "nome": "Krenak",
+      "regiao": "Sudeste",
+      "bioma": "Mata Atlântica",
+      "familiaLinguistica": "Macro-Jê",
+      "populacao": 600,
+      "latitud": -19.5,
+      "longitud": -40.5,
+      "localizacao": "Minas Gerais e Espírito Santo",
+      "historia": "Os Krenak habitam as margens do Rio Doce há séculos. Apesar das pressões históricas, mantêm suas tradições vivas.",
+      "linguas": ["Krenak", "Português"],
+      "curiosidades": [
+        "Conectados ao Rio Doce através de rituais",
+        "Tradição oral forte",
+        "Conhecimento de plantas medicinais do Atlântico"
+      ],
+      "rituais": "Rituais aquáticos, cerimônias de cura, dança do Rio",
+      "artesanato": "Peças de cerâmica, adornos naturais, objetos rituais",
+      "alimentacao": "Peixe de rio, palmito, frutas silvestres, caça",
+      "saudacao": "Nãng pũ (Oi, tudo bem?)"
+    },
+    {
+      "id": 8,
+      "nome": "Xingu - Kuikuro",
+      "regiao": "Centro-Oeste",
+      "bioma": "Floresta Amazônica",
+      "familiaLinguistica": "Karib",
+      "populacao": 700,
+      "latitud": -9.5,
+      "longitud": -53.0,
+      "localizacao": "Parque Indígena do Xingu - Mato Grosso",
+      "historia": "Os Kuikuro vivem no Parque Indígena do Xingu, uma das maiores reservas indígenas do Brasil. Mantêm tradições ancestrais praticamente intactas.",
+      "linguas": ["Kuikuro", "Português"],
+      "curiosidades": [
+        "Vivem em uma das maiores aldeias do Brasil",
+        "Mestres em engenharia hidráulica tradicional",
+        "Tradição de trocas comerciais entre povos do Xingu"
+      ],
+      "rituais": "Festa do Kuarup, cerimônias de iniciação, rituais de plantio",
+      "artesanato": "Esculturas de madeira, panelas de cerâmica, adornos",
+      "alimentacao": "Mandioca, milho, peixe, caça e mel",
+      "saudacao": "Okuya ityu (Bem-vindo)"
+    }
+  ],
+  "quizPerguntas": [
+    {
+      "id": 1,
+      "tipo": "localizacao",
+      "dificuldade": "facil",
+      "pergunta": "Qual povo indígena habita a região da Mata Atlântica no Sul do Brasil?",
+      "opcoes": ["Yanomami", "Guarani", "Kayapó", "Terena"],
+      "resposta": 1,
+      "explicacao": "Os Guarani são um dos maiores povos da Mata Atlântica, habitando São Paulo, Paraná e Santa Catarina."
+    },
+    {
+      "id": 2,
+      "tipo": "cultura",
+      "dificuldade": "facil",
+      "pergunta": "Qual povo amazonense é famoso por seu conhecimento profundo de plantas medicinais?",
+      "opcoes": ["Terena", "Kaingang", "Yanomami", "Guarani"],
+      "resposta": 2,
+      "explicacao": "Os Yanomami têm um conhecimento incomparável sobre plantas medicinais da floresta amazônica."
+    },
+    {
+      "id": 3,
+      "tipo": "historia",
+      "dificuldade": "medio",
+      "pergunta": "Os Kaingang desenvolveram adaptações únicas para qual tipo de ambiente?",
+      "opcoes": ["Deserto", "Clima temperado do planalto", "Litoral", "Cerrado"],
+      "resposta": 1,
+      "explicacao": "Os Kaingang são originários do planalto meridional e desenvolveram adaptações para o clima frio e temperado."
+    },
+    {
+      "id": 4,
+      "tipo": "associacao",
+      "dificuldade": "facil",
+      "pergunta": "Os Kayapó vivem principalmente em qual bioma?",
+      "opcoes": ["Cerrado", "Pantanal", "Floresta Amazônica", "Caatinga"],
+      "resposta": 2,
+      "explicacao": "Os Kayapó são guerreiros da Floresta Amazônica, vivendo em Pará e Mato Grosso."
+    },
+    {
+      "id": 5,
+      "tipo": "cultura",
+      "dificuldade": "medio",
+      "pergunta": "Qual tradição é característica do povo Guarani?",
+      "opcoes": ["Caça de tubarão", "Busca da Terra Sem Males", "Domesticação de lhamas", "Cultivo de cacau em larga escala"],
+      "resposta": 1,
+      "explicacao": "A 'Busca da Terra Sem Males' é uma jornada mística central na espiritualidade guarani."
+    },
+    {
+      "id": 6,
+      "tipo": "localizacao",
+      "dificuldade": "medio",
+      "pergunta": "Os Terena habitam tradicionalmente qual região?",
+      "opcoes": ["Roraima", "Mato Grosso do Sul", "Paraíba", "Santa Catarina"],
+      "resposta": 1,
+      "explicacao": "Os Terena estão concentrados em Mato Grosso do Sul, principalmente ao longo do rio Paraguai."
+    },
+    {
+      "id": 7,
+      "tipo": "historia",
+      "dificuldade": "dificil",
+      "pergunta": "Qual família linguística os Kayapó pertencem?",
+      "opcoes": ["Tupi-Guarani", "Jê", "Yanomami", "Aruak"],
+      "resposta": 1,
+      "explicacao": "Os Kayapó fazem parte da família linguística Jê, originária do Brasil Central."
+    },
+    {
+      "id": 8,
+      "tipo": "associacao",
+      "dificuldade": "dificil",
+      "pergunta": "Qual povo vive no Parque Indígena do Xingu e é mestre em engenharia hidráulica tradicional?",
+      "opcoes": ["Krenak", "Kuikuro", "Yanomami", "Guarani"],
+      "resposta": 1,
+      "explicacao": "Os Kuikuro vivem no Parque do Xingu e possuem conhecimento sofisticado de sistemas de água."
+    },
+    {
+      "id": 9,
+      "tipo": "cultura",
+      "dificuldade": "facil",
+      "pergunta": "Os Kaingang são especialmente conhecidos pela caça de qual animal?",
+      "opcoes": ["Jaguar", "Porco-espinho", "Anta", "Onça"],
+      "resposta": 1,
+      "explicacao": "Os Kaingang caçam especialmente o porco-espinho, que é importante em sua alimentação e cultura."
+    },
+    {
+      "id": 10,
+      "tipo": "historia",
+      "dificuldade": "medio",
+      "pergunta": "Qual povo é considerado um dos maiores e mais populosos povos indígenas do Brasil?",
+      "opcoes": ["Tupinambá", "Guarani", "Krenak", "Kuikuro"],
+      "resposta": 1,
+      "explicacao": "Os Guarani, com cerca de 85.000 pessoas, são um dos maiores povos indígenas brasileiros."
+    }
+  ]
+}

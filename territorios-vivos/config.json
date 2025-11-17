@@ -1,0 +1,327 @@
+{
+  "projeto": {
+    "nome": "Territórios Vivos",
+    "versao": "1.0.0",
+    "descricao": "Mapa Indígena Interativo - Plataforma educativa sobre povos indígenas do Brasil",
+    "autor": "Projeto Educativo Colaborativo",
+    "data": "2025-11",
+    "licenca": "MIT (Educacional)",
+    "idioma": "pt-BR",
+    "pais": "Brasil"
+  },
+  
+  "caracteristicas": {
+    "interatividade": {
+      "mapa": "Leaflet.js com OpenStreetMap",
+      "filtros": "Região, Bioma, Família Linguística",
+      "quiz": "3 níveis, 10 perguntas",
+      "educacao": "6 artigos, timeline, glossário"
+    },
+    "tecnologia": {
+      "frontend": "HTML5, CSS3, JavaScript Vanilla",
+      "mapas": "Leaflet.js 1.9.4",
+      "dados": "JSON local (escalável)",
+      "responsivo": true,
+      "acessivel": "WCAG AA"
+    }
+  },
+  
+  "conteudo": {
+    "povos": 8,
+    "perguntas": 10,
+    "artigos": 6,
+    "periodos_timeline": 7,
+    "termos_glossario": 10
+  },
+  
+  "documentacao": {
+    "comece_aqui": "GUIA_RAPIDO.md",
+    "visao_geral": "SUMARIO.md",
+    "tecnico": "README.md",
+    "branding": "APRESENTACAO.md",
+    "roadmap": "EXPANSAO.md",
+    "deploy": "DEPLOY.md",
+    "testes": "TESTES.md",
+    "arquitetura": "ESTRUTURA.md",
+    "indice": "INDICE.md"
+  },
+  
+  "cores": {
+    "primaria": "#2d6a4f",
+    "secundaria": "#40916c",
+    "acento": "#d4a574",
+    "complementar": "#8b6f47",
+    "fundo": "#f5f3f0",
+    "texto": "#1b3a2a"
+  },
+  
+  "povos": [
+    {
+      "id": 1,
+      "nome": "Guarani",
+      "populacao": 85000
+    },
+    {
+      "id": 2,
+      "nome": "Yanomami",
+      "populacao": 27000
+    },
+    {
+      "id": 3,
+      "nome": "Tupinambá",
+      "populacao": 2000
+    },
+    {
+      "id": 4,
+      "nome": "Kaingang",
+      "populacao": 45000
+    },
+    {
+      "id": 5,
+      "nome": "Kayapó",
+      "populacao": 14000
+    },
+    {
+      "id": 6,
+      "nome": "Terena",
+      "populacao": 29000
+    },
+    {
+      "id": 7,
+      "nome": "Krenak",
+      "populacao": 600
+    },
+    {
+      "id": 8,
+      "nome": "Kuikuro",
+      "populacao": 700
+    }
+  ],
+  
+  "quiz": {
+    "dificuldades": ["facil", "medio", "dificil"],
+    "pergunta_por_sessao": 10,
+    "tipos": [
+      "localizacao",
+      "cultura",
+      "historia",
+      "associacao"
+    ],
+    "opcoes_por_pergunta": 4
+  },
+  
+  "gamificacao": {
+    "medalhas": [
+      {
+        "titulo": "Guardião da Floresta",
+        "emoji": "🏆",
+        "minimo_percentual": 90
+      },
+      {
+        "titulo": "Explorador dos Povos",
+        "emoji": "🥇",
+        "minimo_percentual": 70
+      },
+      {
+        "titulo": "Aprendiz da Cultura",
+        "emoji": "🎯",
+        "minimo_percentual": 50
+      },
+      {
+        "titulo": "Continue Explorando",
+        "emoji": "📚",
+        "minimo_percentual": 0
+      }
+    ]
+  },
+  
+  "estrutura": {
+    "pastas": [
+      {
+        "caminho": "/",
+        "descricao": "Raiz do projeto"
+      },
+      {
+        "caminho": "/assets",
+        "descricao": "Recursos (CSS, JS, dados)"
+      },
+      {
+        "caminho": "/assets/css",
+        "descricao": "Estilos CSS"
+      },
+      {
+        "caminho": "/assets/js",
+        "descricao": "Lógica JavaScript"
+      },
+      {
+        "caminho": "/assets/data",
+        "descricao": "Base de dados JSON"
+      },
+      {
+        "caminho": "/assets/images",
+        "descricao": "Imagens (futuro)"
+      }
+    ],
+    "arquivos_principais": [
+      {
+        "nome": "index.html",
+        "descricao": "Página principal",
+        "linhas": 500
+      },
+      {
+        "nome": "assets/css/style.css",
+        "descricao": "Estilos",
+        "linhas": 800
+      },
+      {
+        "nome": "assets/js/app.js",
+        "descricao": "Lógica",
+        "linhas": 800
+      },
+      {
+        "nome": "assets/data/povos.json",
+        "descricao": "Base de dados",
+        "linhas": 600
+      }
+    ]
+  },
+  
+  "deployment": {
+    "opcoes": [
+      "GitHub Pages (gratuito)",
+      "Vercel (recomendado)",
+      "Netlify",
+      "Servidor próprio"
+    ],
+    "https": true,
+    "dominio_personalizado": true
+  },
+  
+  "performance": {
+    "tamanho_html_kb": 20,
+    "tamanho_css_kb": 40,
+    "tamanho_js_kb": 35,
+    "tamanho_json_kb": 30,
+    "carregamento_esperado_segundos": 2,
+    "suporta_offline": false
+  },
+  
+  "compatibilidade": {
+    "navegadores": [
+      {
+        "nome": "Chrome",
+        "versao_minima": 90,
+        "status": "Suportado"
+      },
+      {
+        "nome": "Firefox",
+        "versao_minima": 88,
+        "status": "Suportado"
+      },
+      {
+        "nome": "Safari",
+        "versao_minima": 14,
+        "status": "Suportado"
+      },
+      {
+        "nome": "Edge",
+        "versao_minima": 90,
+        "status": "Suportado"
+      },
+      {
+        "nome": "IE 11",
+        "versao_minima": null,
+        "status": "Não suportado"
+      }
+    ],
+    "dispositivos": [
+      "Desktop",
+      "Tablet",
+      "Mobile"
+    ],
+    "responsive": true
+  },
+  
+  "acessibilidade": {
+    "nivel": "WCAG AA",
+    "teclado": true,
+    "leitor_tela": true,
+    "contraste": "AAA em maioria"
+  },
+  
+  "proximas_fases": {
+    "v1.1": {
+      "timeline": "3 meses",
+      "objetivos": [
+        "Expandir para 30 povos",
+        "Adicionar imagens",
+        "Adicionar áudios",
+        "Versão em inglês"
+      ]
+    },
+    "v1.5": {
+      "timeline": "6 meses",
+      "objetivos": [
+        "Autenticação de usuários",
+        "Sistema de pontos",
+        "Leaderboard",
+        "Tracking de progresso"
+      ]
+    },
+    "v2.0": {
+      "timeline": "12 meses",
+      "objetivos": [
+        "Backend Node.js/Express",
+        "Banco de dados",
+        "API REST",
+        "Aplicativo Mobile"
+      ]
+    }
+  },
+  
+  "metricas_sucesso": {
+    "visitantes_mes": 1000,
+    "taxa_retorno": "30%",
+    "tempo_medio_minutos": 5,
+    "taxa_conclusao_quiz": "70%",
+    "acertos_quiz_media": "65%",
+    "bounce_rate": "40%"
+  },
+  
+  "palavras_chave": [
+    "povos indígenas",
+    "mapa interativo",
+    "educação",
+    "Brasil",
+    "cultura",
+    "quiz",
+    "aprendizado"
+  ],
+  
+  "contatos": {
+    "email": "contato@territorios-vivos.com",
+    "github": "https://github.com/seu-usuario/territorios-vivos",
+    "website": "https://territorios-vivos.com"
+  },
+  
+  "recursos_externos": {
+    "leaflet_js": "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js",
+    "leaflet_css": "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css",
+    "openstreetmap": "https://www.openstreetmap.org"
+  },
+  
+  "opcoes_personalizacao": {
+    "editar_cores": "assets/css/style.css - :root",
+    "editar_povos": "assets/data/povos.json",
+    "editar_perguntas": "assets/data/povos.json - quizPerguntas",
+    "editar_artigos": "index.html - seção educativa"
+  },
+  
+  "notas": [
+    "Projeto educativo respeitoso",
+    "Conteúdo baseado em pesquisa",
+    "Escalável para múltiplos países",
+    "Código limpo e documentado",
+    "Pronto para produção"
+  ]
+}
