@@ -267,6 +267,96 @@
       "opcoes": ["Tupinambá", "Guarani", "Krenak", "Kuikuro"],
       "resposta": 1,
       "explicacao": "Os Guarani, com cerca de 85.000 pessoas, são um dos maiores povos indígenas brasileiros."
+    },
+    {
+      "id": 11,
+      "tipo": "associacao",
+      "dificuldade": "facil",
+      "pergunta": "Qual povo indígena tem população de apenas 600 pessoas?",
+      "opcoes": ["Guarani", "Kaingang", "Krenak", "Kayapó"],
+      "resposta": 2,
+      "explicacao": "Os Krenak são um povo pequeno com aproximadamente 600 pessoas, habitantes das margens do Rio Doce."
+    },
+    {
+      "id": 12,
+      "tipo": "cultura",
+      "dificuldade": "facil",
+      "pergunta": "Os Terena são históricos navegadores de qual rio?",
+      "opcoes": ["Rio Amazonas", "Rio Paraguai", "Rio Doce", "Rio Madeira"],
+      "resposta": 1,
+      "explicacao": "Os Terena desenvolveram técnicas sofisticadas de navegação e pesca no rio Paraguai."
+    },
+    {
+      "id": 13,
+      "tipo": "localizacao",
+      "dificuldade": "medio",
+      "pergunta": "Qual povo indígena habita o Parque Indígena do Xingu?",
+      "opcoes": ["Yanomami", "Kuikuro", "Guarani", "Kaingang"],
+      "resposta": 1,
+      "explicacao": "Os Kuikuro vivem no Parque Indígena do Xingu, uma das maiores reservas indígenas do Brasil."
+    },
+    {
+      "id": 14,
+      "tipo": "cultura",
+      "dificuldade": "medio",
+      "pergunta": "Qual ritual é importante para os Kayapó e significa homenagem aos mortos?",
+      "opcoes": ["Dança do Opará", "Kuarup", "Festa do Milho", "Ritual aquático"],
+      "resposta": 1,
+      "explicacao": "O Kuarup é um importante ritual dos Kayapó que homenageia e celebra a memória dos mortos."
+    },
+    {
+      "id": 15,
+      "tipo": "historia",
+      "dificuldade": "dificil",
+      "pergunta": "Qual família linguística o povo Terena pertence?",
+      "opcoes": ["Jê", "Yanomami", "Aruak", "Karib"],
+      "resposta": 2,
+      "explicacao": "Os Terena fazem parte da família linguística Aruak, diferente da maioria dos povos brasileiros."
+    },
+    {
+      "id": 16,
+      "tipo": "associacao",
+      "dificuldade": "facil",
+      "pergunta": "Qual bioma é o lar do povo Yanomami?",
+      "opcoes": ["Cerrado", "Mata Atlântica", "Floresta Amazônica", "Caatinga"],
+      "resposta": 2,
+      "explicacao": "Os Yanomami vivem na Floresta Amazônica, na região do Alto Orinoco entre Roraima e Amazonas."
+    },
+    {
+      "id": 17,
+      "tipo": "cultura",
+      "dificuldade": "medio",
+      "pergunta": "Os Tupinambá eram conhecidos por serem principalmente o quê?",
+      "opcoes": ["Agricultores pacíficos", "Guerreiros navegadores", "Artesãos de ouro", "Xamãs curandeiros"],
+      "resposta": 1,
+      "explicacao": "Os Tupinambá eram guerreiros e navegadores excelentes, com embarcações sofisticadas."
+    },
+    {
+      "id": 18,
+      "tipo": "localizacao",
+      "dificuldade": "dificil",
+      "pergunta": "Qual povo indígena habita a Mata de Araucária?",
+      "opcoes": ["Guarani", "Yanomami", "Kaingang", "Kayapó"],
+      "resposta": 2,
+      "explicacao": "Os Kaingang são habitantes ancestrais do planalto meridional e da Mata de Araucária."
+    },
+    {
+      "id": 19,
+      "tipo": "cultura",
+      "dificuldade": "dificil",
+      "pergunta": "Qual povo moderno é conhecido como líder ambientalista e usa tecnologia para proteger suas terras?",
+      "opcoes": ["Guarani", "Yanomami", "Kayapó", "Terena"],
+      "resposta": 2,
+      "explicacao": "Os Kayapó são líderes ambientalistas modernos que utilizam tecnologia para proteger suas terras amazônicas."
+    },
+    {
+      "id": 20,
+      "tipo": "associacao",
+      "dificuldade": "facil",
+      "pergunta": "Qual povo indígena tem forte tradição de artesanato em couro?",
+      "opcoes": ["Kayapó", "Terena", "Yanomami", "Krenak"],
+      "resposta": 1,
+      "explicacao": "Os Terena têm uma tradição forte de artesanato em couro, fazendo bolsas e outros artigos."
     }
   ]
 }

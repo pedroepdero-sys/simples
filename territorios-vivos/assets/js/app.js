@@ -19,6 +19,15 @@ let app = {
         regiao: '',
         bioma: '',
         lingua: ''
+    },
+    coresPorRegiao: {
+        'Norte': '#FF6B6B',
+        'Nordeste e Sudeste': '#4ECDC4',
+        'Sul e Sudeste': '#45B7D1',
+        'Centro-Oeste e Norte': '#FFA07A',
+        'Centro-Oeste': '#98D8C8',
+        'Sudeste': '#F7DC6F',
+        'Sul': '#BB8FCE'
     }
 };
 
@@ -108,17 +117,21 @@ function atualizarMapa() {
     const povosFiltrados = filtrarPovos();
     
     povosFiltrados.forEach(povo => {
-        // Criar ícone customizado
+        // Obter cor da região
+        const cor = app.coresPorRegiao[povo.regiao] || '#2d6a4f';
+        
+        // Criar ícone customizado com cor
         const icone = L.divIcon({
             className: 'marcador-povo',
-            html: `<div class="marcador-emoji">🏘️</div>`,
+            html: `<div class="marcador-emoji" style="background-color: ${cor}; border-color: ${cor};">🏘️</div>`,
             iconSize: [40, 40],
             popupAnchor: [0, -20]
         });
         
         // Criar marcador
         const marcador = L.marker([povo.latitud, povo.longitud], { icon: icone })
-            .bindPopup(`<strong>${povo.nome}</strong><br>${povo.regiao}`)
+            .bindPopup(`<strong>${povo.nome}</strong><br><span style="color: ${cor}; font-weight: bold;">${povo.regiao}</span>`)
+
             .on('click', () => abrirModalPovo(povo))
             .addTo(app.mapa);
         
@@ -289,8 +302,9 @@ function iniciarQuiz(dificuldade) {
     app.quizDados.perguntaAtual = 0;
     app.quizDados.respostas = [];
     
-    // Embaralhar perguntas
-    app.quizDados.perguntas = app.quizDados.perguntas.sort(() => Math.random() - 0.5).slice(0, 10);
+    // Embaralhar perguntas - pega até 20 perguntas disponíveis
+    const numPerguntas = Math.min(20, app.quizDados.perguntas.length);
+    app.quizDados.perguntas = app.quizDados.perguntas.sort(() => Math.random() - 0.5).slice(0, numPerguntas);
     
     mostrarPergunta();
     document.getElementById('quiz-selector').classList.add('hidden');

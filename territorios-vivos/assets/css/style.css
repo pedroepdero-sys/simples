@@ -208,6 +208,37 @@ html, body {
     transition: background var(--transition);
 }
 
+.legenda-regioes {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+    position: sticky;
+    top: 400px;
+}
+
+.legenda-regioes h4 {
+    color: var(--primary-color);
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+.legenda-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+    font-size: 0.85rem;
+}
+
+.legenda-cores {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    margin-right: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
 .btn-secondary:hover {
     background: var(--primary-color);
 }
