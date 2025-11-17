@@ -175,6 +175,182 @@
       "artesanato": "Esculturas de madeira, panelas de cerâmica, adornos",
       "alimentacao": "Mandioca, milho, peixe, caça e mel",
       "saudacao": "Okuya ityu (Bem-vindo)"
+    },
+    {
+      "id": 9,
+      "nome": "Xingu - Kamaiurá",
+      "regiao": "Centro-Oeste",
+      "bioma": "Floresta Amazônica",
+      "familiaLinguistica": "Tupi",
+      "populacao": 600,
+      "latitud": -10.0,
+      "longitud": -52.5,
+      "localizacao": "Parque Indígena do Xingu - Mato Grosso",
+      "historia": "Os Kamaiurá são um povo Tupi que habita o Parque do Xingu. Conhecidos por manter relações comerciais e culturais com outros povos da região.",
+      "linguas": ["Kamaiurá", "Português"],
+      "curiosidades": [
+        "Excelentes comerciantes e diplomatas entre povos",
+        "Conhecimento profundo de plantas e ervas",
+        "Festas com povos vizinhos do Xingu"
+      ],
+      "rituais": "Festa de reciprocidade, cerimônias de comércio, rituais de plantio",
+      "artesanato": "Cerâmica fina, colares, objetos ritualísticos",
+      "alimentacao": "Peixe de rio, mandioca, frutas, caça",
+      "saudacao": "Kemeu (Bem-vindo)"
+    },
+    {
+      "id": 10,
+      "nome": "Makuxi",
+      "regiao": "Norte",
+      "bioma": "Floresta Amazônica e Savana",
+      "familiaLinguistica": "Karib",
+      "populacao": 34000,
+      "latitud": 4.5,
+      "longitud": -60.5,
+      "localizacao": "Roraima e norte do Amazonas",
+      "historia": "Os Makuxi são um povo Karib que habita a região de savana e floresta do norte do Brasil. Historicamente navegadores de rios e excelentes agricultores.",
+      "linguas": ["Makuxi", "Português"],
+      "curiosidades": [
+        "Cultivam mais de 20 variedades de mandioca",
+        "Conhecimento ancestral sobre navegação fluvial",
+        "Festividades com música tradicional de flautas"
+      ],
+      "rituais": "Festa da colheita, cerimônias de iniciação, rituais de cura",
+      "artesanato": "Cestos tejidos, redes de algodão, adornos de penas",
+      "alimentacao": "Mandioca, peixe, caça, frutas da floresta",
+      "saudacao": "Wabu (Oi)"
+    },
+    {
+      "id": 11,
+      "nome": "Wapixana",
+      "regiao": "Norte",
+      "bioma": "Savana do Rio Branco",
+      "familiaLinguistica": "Aruak",
+      "populacao": 8500,
+      "latitud": 3.5,
+      "longitud": -61.0,
+      "localizacao": "Roraima",
+      "historia": "Os Wapixana compartilham terras com os Makuxi em Roraima. Possuem tradições únicas de arte e conhecimento ecológico.",
+      "linguas": ["Wapixana", "Português"],
+      "curiosidades": [
+        "Pintam o corpo com padrões geométricos únicos",
+        "Conservam sementes de plantas ancestrais",
+        "Tradição forte de contos e narrativas"
+      ],
+      "rituais": "Rituais de cura com plantas, cerimônias sazonais, danças tradicionais",
+      "artesanato": "Pintura corporal, cerâmica com padrões geométricos, colares",
+      "alimentacao": "Mandioca, frutas, caça, peixe",
+      "saudacao": "Parokwa (Como está?)"
+    },
+    {
+      "id": 12,
+      "nome": "Tukano",
+      "regiao": "Norte",
+      "bioma": "Floresta Amazônica",
+      "familiaLinguistica": "Tukano",
+      "populacao": 45000,
+      "latitud": 0.5,
+      "longitud": -65.0,
+      "localizacao": "Alto Rio Negro - Amazonas",
+      "historia": "Os Tukano vivem na região do Rio Negro e possuem um dos sistemas cosmológicos mais complexos do Brasil.",
+      "linguas": ["Tukano", "Português"],
+      "curiosidades": [
+        "Dominam o manejo de mais de 400 espécies de plantas",
+        "Sistema de clãs matrilineais muito sofisticado",
+        "Conhecimento xamânico extremamente desenvolvido"
+      ],
+      "rituais": "Festa da Puçanga, iniciação com alucinógenos rituais, cerimônias de cura",
+      "artesanato": "Bancos esculpidos, flautas sagradas, adornos de ouro",
+      "alimentacao": "Peixe, caça, frutas, raízes silvestres",
+      "saudacao": "Gua-dia (Bem-vindo)"
+    },
+    {
+      "id": 13,
+      "nome": "Ticuna",
+      "regiao": "Norte",
+      "bioma": "Floresta Amazônica",
+      "familiaLinguistica": "Isolada",
+      "populacao": 50000,
+      "latitud": -3.0,
+      "longitud": -70.0,
+      "localizacao": "Solimões e tributários - Amazonas",
+      "historia": "Os Ticuna são um dos maiores povos indígenas da Amazônia. Sua língua é isolada, sem filiação a outros grupos.",
+      "linguas": ["Ticuna", "Português"],
+      "curiosidades": [
+        "Maior população indígena da Amazônia brasileira",
+        "Língua única sem filiação com outras famílias",
+        "Excelentes artesãos de madeira e fibra"
+      ],
+      "rituais": "Festa da Moça Nova (puberdade), cerimônias comunitárias, rituais fúnebres",
+      "artesanato": "Máscaras de madeira, cestarias elaboradas, esculturas",
+      "alimentacao": "Peixe (piranhas, tucunarés), caça, frutas amazônicas",
+      "saudacao": "Ãgã gú (Oi)"
+    },
+    {
+      "id": 14,
+      "nome": "Ashaninka",
+      "regiao": "Centro-Oeste",
+      "bioma": "Floresta Amazônica",
+      "familiaLinguistica": "Aruak",
+      "populacao": 18000,
+      "latitud": -8.0,
+      "longitud": -72.0,
+      "localizacao": "Vale do Rio Ucayali - Acre",
+      "historia": "Os Ashaninka distribuem-se pelo Peru e Brasil. Lutaram historicamente contra invasões e mantêm forte tradição de resistência.",
+      "linguas": ["Ashaninka", "Português"],
+      "curiosidades": [
+        "Tecem a maior variedade de padrões de algodão da Amazônia",
+        "Conhecimento sofisticado de plantas medicinais",
+        "Histórico de resistência e guerrilha contra invasores"
+      ],
+      "rituais": "Cerimônias de tecelagem, rituais de cura, festas comunitárias",
+      "artesanato": "Tecidos com padrões geométricos, redes de algodão, cerâmica",
+      "alimentacao": "Yuca, mandioca, caça, mel, frutas",
+      "saudacao": "Pava (Bem-vindo)"
+    },
+    {
+      "id": 15,
+      "nome": "Pataxó",
+      "regiao": "Nordeste e Sudeste",
+      "bioma": "Mata Atlântica",
+      "familiaLinguistica": "Macro-Jê",
+      "populacao": 13000,
+      "latitud": -16.5,
+      "longitud": -39.5,
+      "localizacao": "Bahia (litoral e interior)",
+      "historia": "Os Pataxó são guerreiros da Mata Atlântica que enfrentaram séculos de pressão colonial. Lutam pela recuperação cultural e territorial.",
+      "linguas": ["Pataxó", "Português"],
+      "curiosidades": [
+        "Recuperaram a língua após quase extinção",
+        "Importantes atores na luta por direitos indígenas",
+        "Conhecimento tradicional de plantas da Mata Atlântica"
+      ],
+      "rituais": "Festa de Tuxaua, cerimônias de resistência, danças tradicionais",
+      "artesanato": "Arcos e flechas, colares, adornos de penas",
+      "alimentacao": "Mandioca, peixe, caça, frutas da mata",
+      "saudacao": "Porahy (Como vai?)"
+    },
+    {
+      "id": 16,
+      "nome": "Munduruku",
+      "regiao": "Norte",
+      "bioma": "Floresta Amazônica",
+      "familiaLinguistica": "Tupi",
+      "populacao": 14000,
+      "latitud": -6.0,
+      "longitud": -58.0,
+      "localizacao": "Rio Tapajos e afluentes - Pará e Amazonas",
+      "historia": "Os Munduruku foram guerreiros temidos na história colonial. Hoje lutam contra a exploração de suas terras e recursos.",
+      "linguas": ["Munduruku", "Português"],
+      "curiosidades": [
+        "Guerreiros famosos na história do Brasil colonial",
+        "Resistência contra garimpo e desmatamento",
+        "Organização comunitária muito forte"
+      ],
+      "rituais": "Festa do tucupi, cerimônias de iniciação, rituais de guerra espiritual",
+      "artesanato": "Arcos de madeira nobre, cestos, adornos rituais",
+      "alimentacao": "Peixe, caça (especialmente porco-espinho), frutas",
+      "saudacao": "Ãu au (Bem-vindo)"
     }
   ],
   "quizPerguntas": [
@@ -357,6 +533,96 @@
       "opcoes": ["Kayapó", "Terena", "Yanomami", "Krenak"],
       "resposta": 1,
       "explicacao": "Os Terena têm uma tradição forte de artesanato em couro, fazendo bolsas e outros artigos."
+    },
+    {
+      "id": 21,
+      "tipo": "localizacao",
+      "dificuldade": "facil",
+      "pergunta": "Qual povo indígena habita o Parque Indígena do Xingu com população de 600 pessoas?",
+      "opcoes": ["Ticuna", "Tukano", "Kamaiurá", "Ashaninka"],
+      "resposta": 2,
+      "explicacao": "Os Kamaiurá vivem no Parque Indígena do Xingu e são conhecidos por suas relações comerciais com outros povos."
+    },
+    {
+      "id": 22,
+      "tipo": "cultura",
+      "dificuldade": "medio",
+      "pergunta": "Qual povo Karib do norte cultiva mais de 20 variedades de mandioca?",
+      "opcoes": ["Wapixana", "Makuxi", "Tukano", "Munduruku"],
+      "resposta": 1,
+      "explicacao": "Os Makuxi são excelentes agricultores e cultivam mais de 20 variedades diferentes de mandioca."
+    },
+    {
+      "id": 23,
+      "tipo": "associacao",
+      "dificuldade": "facil",
+      "pergunta": "Os Tukano vivem principalmente em qual rio?",
+      "opcoes": ["Rio Amazonas", "Rio Negro", "Rio Tapajos", "Rio Madeira"],
+      "resposta": 1,
+      "explicacao": "Os Tukano habitam a região do Alto Rio Negro no estado do Amazonas, dominando plantas medicinais amazônicas."
+    },
+    {
+      "id": 24,
+      "tipo": "historia",
+      "dificuldade": "medio",
+      "pergunta": "Qual é o maior povo indígena da Amazônia brasileira?",
+      "opcoes": ["Tukano", "Ticuna", "Ashaninka", "Munduruku"],
+      "resposta": 1,
+      "explicacao": "Os Ticuna são o maior povo indígena da Amazônia brasileira com cerca de 50.000 pessoas."
+    },
+    {
+      "id": 25,
+      "tipo": "cultura",
+      "dificuldade": "dificil",
+      "pergunta": "Qual povo tem uma língua isolada sem filiação a outras famílias linguísticas?",
+      "opcoes": ["Tukano", "Ticuna", "Ashaninka", "Makuxi"],
+      "resposta": 1,
+      "explicacao": "A língua Ticuna é isolada e única no Brasil, sem classificação em nenhuma família linguística conhecida."
+    },
+    {
+      "id": 26,
+      "tipo": "localizacao",
+      "dificuldade": "medio",
+      "pergunta": "Os Ashaninka vivem principalmente em qual rio?",
+      "opcoes": ["Rio Solimões", "Rio Ucayali", "Rio Tapajos", "Rio Negro"],
+      "resposta": 1,
+      "explicacao": "Os Ashaninka habitam o Vale do Rio Ucayali, compartilhando terras entre Brasil e Peru."
+    },
+    {
+      "id": 27,
+      "tipo": "cultura",
+      "dificuldade": "facil",
+      "pergunta": "Os Ashaninka são famosos por tecer qual material com padrões geométricos?",
+      "opcoes": ["Lã", "Algodão", "Juta", "Palha"],
+      "resposta": 1,
+      "explicacao": "Os Ashaninka tecem algodão com a maior variedade de padrões geométricos da Amazônia."
+    },
+    {
+      "id": 28,
+      "tipo": "historia",
+      "dificuldade": "medio",
+      "pergunta": "Qual povo da Bahia lutou pela recuperação de sua língua quase extinta?",
+      "opcoes": ["Guarani", "Pataxó", "Tupinambá", "Krenak"],
+      "resposta": 1,
+      "explicacao": "Os Pataxó recuperaram sua língua e cultura após séculos de pressão colonial e luta pelos direitos."
+    },
+    {
+      "id": 29,
+      "tipo": "associacao",
+      "dificuldade": "facil",
+      "pergunta": "Os Munduruku têm forte presença em qual rio amazônico?",
+      "opcoes": ["Rio Negro", "Rio Branco", "Rio Tapajos", "Rio Solimões"],
+      "resposta": 2,
+      "explicacao": "Os Munduruku vivem no Rio Tapajos e seus afluentes, lutando contra exploração de suas terras."
+    },
+    {
+      "id": 30,
+      "tipo": "cultura",
+      "dificuldade": "dificil",
+      "pergunta": "Qual povo indígena compartilha terras com os Makuxi em Roraima e usa pintura corporal com padrões geométricos?",
+      "opcoes": ["Ticuna", "Wapixana", "Ashaninka", "Pataxó"],
+      "resposta": 1,
+      "explicacao": "Os Wapixana compartilham terras com os Makuxi em Roraima e possuem tradição única de pintura corporal."
     }
   ]
 }
