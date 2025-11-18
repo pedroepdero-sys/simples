@@ -896,6 +896,11 @@ html, body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Espaçamento adicional para o primeiro item evitar sobreposição com a data */
+.timeline-item:first-child .timeline-content {
+    margin-top: 30px;
+}
+
 .timeline-content h4 {
     color: var(--primary-color);
     margin-bottom: 10px;
